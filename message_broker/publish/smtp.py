@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-emails = ["s.lekhtin@innopolis.university", "e.puzhalov@innopolis.university"]
+emails = ["s.lekhtin@innopolis.university", "e.puzhalov@innopolis.university", "e.meganov@innopolis.university", "v.grigorev@innopolis.university", "m.drazdou@innopolis.university"]
 
 
 def send_email(smtp_server, port, sender_email, sender_password, subject, message_schema):

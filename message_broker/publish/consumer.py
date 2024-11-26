@@ -23,7 +23,7 @@ async def consume_messages(rabbitmq_url: str = "amqp://guest:guest@localhost/"):
         await channel.set_qos(prefetch_count=10)
 
         queue_name = "publish_queue"
-        queue = await channel.declare_queue(queue_name, durable=True)
+        queue = await channel.declare_queue(queue_name, durable=False)
 
         print(f"Waiting for messages in queue '{queue_name}'. To exit, press CTRL+C.")
 
