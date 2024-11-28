@@ -1,6 +1,5 @@
 import psutil
-import time
-from statistics import mean  # Importing mean to calculate average
+from statistics import mean
 
 def monitor_resources(duration=10):
     print("Monitoring resources...")
