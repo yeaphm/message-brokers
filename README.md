@@ -1,3 +1,5 @@
+# Hands-on: Message Brokers
+
 The project demonstrates an event-driven system with use of RabbitMQ as a message broker.
 The system processes users' messages, filtering for stop words, converting text to uppercase, and sending emails.
 A Pipes-and-Filters version of the system is developed for performance comparison.
