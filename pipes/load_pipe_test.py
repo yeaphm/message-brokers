@@ -13,12 +13,12 @@ async def send_request(client, data):
     return end_time - start_time, response.status_code
 
 async def load_test():
-    async with httpx.AsyncClient(timeout=30.0) as client:
+    async with httpx.AsyncClient(timeout=50.0) as client:
         latencies = []
         for message in MESSAGES:
             latency, status = await send_request(client, message)
             latencies.append(latency)
-            print(f"Message sent: {message['user_alias']}, Status: {status}, Latency: {latency:.2f}s")
+            print(f"Message sent: {message['message']}, Status: {status}, Latency: {latency:.2f}s")
         print(f"Average Latency: {mean(latencies):.2f}s")
 
 if __name__ == "__main__":

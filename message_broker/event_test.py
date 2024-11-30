@@ -26,7 +26,7 @@ async def load_test():
         for message in MESSAGES:
             latency, status = await send_request(client, message)
             latencies.append(latency)
-            print(f"Message sent: {message['user_alias']}, Status: {status}, Latency: {latency:.2f}s")
+            print(f"Message sent: {message['message']}, Status: {status}, Latency: {latency:.2f}s")
         print(f"Average Latency: {mean(latencies):.2f}s")
 
 
