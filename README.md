@@ -31,6 +31,10 @@ Pipes-and-Filters simplified design with lower CPU overhead, but significantly h
    `docker run -d --hostname rabbitmq --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management`
 2. Create a .env file in the pipes and publish directories
 
-3 (a). Run Event-Driven from message_brokers/message_broker
+3 (a). Run Event-Driven
+   - Navigate to message_brokers/message_broker
    - Start each service in separate terminals
-3 (b). Run main.py from message_brokers/pipes
+     
+3 (b). Run Pipes-and-Filters
+   - Navigate to message_brokers/pipes
+   - Run main.py
