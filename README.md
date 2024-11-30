@@ -27,21 +27,10 @@ Pipes-and-Filters simplified design with lower CPU overhead, but significantly h
 
 **Steps to Run:**
 1. Start a RabbitMQ broker using Docker:
-   docker run -d --hostname rabbitmq --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management  
-2. Create a .env file in the root directory with the RabbitMQ connection details.
+   
+   `docker run -d --hostname rabbitmq --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management`
+2. Create a .env file in the pipes and publish directories
 
-3 (a). Run Event-Driven
-   - Install dependencies:
-   pip install -r requirements.txt
-   - Start each service in separate terminals:
-   python rest_api_service.py
-   python filter_service.py
-   python screaming_service.py
-   python publish_service.py  
-3 (b). Run Pipes-and-Filters
-   python pipes_system.py  
-
-**Test:**
-
-
-
+3 (a). Run Event-Driven from message_brokers/message_broker
+   - Start each service in separate terminals
+3 (b). Run main.py from message_brokers/pipes
