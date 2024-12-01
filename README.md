@@ -13,7 +13,7 @@ The system consists of four independent services, which communicates asynchronou
 
 The Pipes-and-Filters implementation uses the same services, but connects them using in-memory pipes instead of a broker. Each service operates as a separate process.
 
-**Comparison:**
+**Testing report:**
 
 | Metric |	Event-Driven System |	Pipes-and-Filters System |
 |--------|----------------------|--------------------------|
