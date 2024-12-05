@@ -37,4 +37,4 @@ Pipes-and-Filters simplified design with lower CPU overhead, but significantly h
      
 3 (b). Run Pipes-and-Filters
    - Navigate to pipes
-   - Run main.py
+   - Run app.py
